@@ -1,10 +1,13 @@
 pipeline {
-  agent any
+  agent none
   stages {
-    stage('') {
+    stage('Printmsg') {
       steps {
-        echo 'hello world'
+        echo 'Hello world'
       }
     }
+  }
+  environment {
+    message = 'Hello world'
   }
 }
