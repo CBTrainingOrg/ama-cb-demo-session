@@ -1,13 +1,9 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Say Hello / Print Message') {
       steps {
         echo 'Hello World!'
-      }
-    }
-    stage('error') {
-      steps {
         sh 'java -version'
       }
     }
