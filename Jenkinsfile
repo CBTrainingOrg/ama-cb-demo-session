@@ -5,12 +5,12 @@ pipeline {
   stages {
     stage('Say Hello / Print Message') {
       steps {
-        echo 'Hello World!'
+        echo "Hello ${MY_NAME}!"
         sh 'java -version'
       }
     }
   }
   environment {
-    message = 'Hello world'
+    MY_NAME = 'Ameet'
   }
 }
